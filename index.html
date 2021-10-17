@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-utils.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+        <h2 class="text-center">Weather Dashboard</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" id="search-cities">
+                    <div class="card-header">
+                        <h5>Search for a City:</h5>
+                        <form class="form-inline pb-2">
+                            <input type="text" class="form-control mr-2" id="search-input">
+                            <button class="btn btn-primary" id="serach-btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                        <div class="card hide" id="searched-cities-card">
+                            <ul class="list-group list-group-flush" id="searched-cities-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="row" id="current-weather-conditions">
+            </div>
+            <div class="row" id="five-day-forecast">
+                <div class="card-deck w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=""></script>
+    <script src=""></script>
+</body>
+
+</html>
